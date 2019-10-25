@@ -1,16 +1,18 @@
 /* FONT IMPORTS AND INTEGRATION */
 
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:500,700|IBM+Plex+Sans&display=swap");
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* HEADER SECTION */
 
 .header {
   height: 120px;
-  background-color: rgb(254, 217, 32);
+  background-color: limegreen;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-weight: 700;
 }
 .header-navbar-links {
   float: right;
@@ -26,10 +28,10 @@ body {
   text-decoration: none;
 }
 .navbar-link:hover {
-  color: rgb(35, 218, 252);
+  color: purple;
 }
 .navbar-link-selected {
-  color: rgb(35, 218, 252);
+  color: purple;
   font-weight: 700;
 }
 .navbar-link-selected:hover {
@@ -48,7 +50,7 @@ body {
   color: rgb(0, 0, 0);
 }
 .header-brand:hover {
-  color: rgb(35, 218, 252);
+  color: purple;
 }
 
 /* CONTENT SECTION */
@@ -66,7 +68,8 @@ body {
   background-color: rgb(20, 20, 20);
 }
 .content-title {
-  font-weight: bold;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-weight: 700;
   color: rgb(255, 255, 255);
 }
 .content-img {
