@@ -9,7 +9,7 @@ body {
 /* HEADER SECTION */
 
 .header {
-  height: 120px;
+  height: 100px;
   background-color: lime;
   font-family: "IBM Plex Mono", sans-serif;
   font-weight: 700;
@@ -24,7 +24,7 @@ body {
   margin-left: 26px;
 }
 .navbar-link {
-  color: rgb(0, 0, 0);
+  color: #212220;
   text-decoration: none;
 }
 .navbar-link:hover {
@@ -36,7 +36,7 @@ body {
   border-bottom: 1px purple;
 }
 .navbar-link-selected:hover {
-  color: rgb(0, 0, 0);
+  color: #212220;
 }
 .header-brand-wrapper {
   margin-top: 60px;
@@ -48,7 +48,7 @@ body {
   font-size: 200%;
   display: block;
   margin-top: -9%;
-  color: rgb(0, 0, 0);
+  color: #212220;
 }
 .header-brand:hover {
   color: purple;
@@ -60,13 +60,13 @@ body {
   color: rgb(255, 255, 255);
   padding-top: 100px;
   padding-bottom: 85px;
-  background-color: rgb(0, 0, 0);
+  background-color: #212220;
 }
 .content-bright {
   color: rgb(255, 255, 255);
   padding-top: 100px;
   padding-bottom: 85px;
-  background-color: rgb(20, 20, 20);
+  background-color: #484a48;
 }
 .content-title {
   font-family: "IBM Plex Mono", sans-serif;
@@ -83,5 +83,10 @@ body {
 }
 
 code {
-  color: #000;
+  color: #212220;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }

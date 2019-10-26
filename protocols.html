@@ -96,9 +96,9 @@
             Zudem wurden die IP-Adressen vergrößert indem das IP Protokoll, das
             in der Version 4 (<em>IPv4</em>) daherkam, durch eine neue Version 6
             (<em>IPv6</em>) ersetzt wurde. In der Version 4 gab es nur
-            <span>2<sup>32</sup> </span>mögliche Adressen und diese arbeitet mit
-            32-Bit Adressen während das neue Internetprotokoll 2<sup>128</sup>
-            Adressen hat und mit 64-Bit Adressen arbeitet. Das IP Protokoll
+            <span>2<sup>32</sup> </span>mögliche Adressen, arbeitet also mit
+            32-Bit Adressen, während das neue Internetprotokoll IPv6 mit
+            <span>2<sup>128</sup> </span>Adressen arbeitet. Das IP Protokoll
             bringt Daten von einem Endgerät (PC, Smartphone) zu einem anderen
             Endgerät. Es verpackt alle Daten und unterteilt sie in transportable
             Pakete (Datagramme). Inhalt dieser Pakete ist:
@@ -179,6 +179,58 @@
               angreifbar (Slow Loris Attack)
             </li>
           </ul>
+          <h2>UDP</h2>
+          <p>
+            <strong>UDP</strong> (<em>User Datagram Protocol</em>) ist quasi der
+            kleine Bruder von TCP. Der größte Vorteil von UDP dessen
+            Performance, denn die Datenübertragung zwischen Server und Client
+            erfolgt bei UDP ohne die Anfragen und Bestätigungen. Bei UDP werden
+            die Daten einfach regelrecht in eine Richtung <em>geschossen</em>.
+            <br />UDP garantiert nicht, dass alle Pakete...
+          </p>
+          <ul>
+            <li>...in der richtigen Reihenfolge ankommen</li>
+            <li>...unverändert/unbeschädigt ankommen</li>
+            <li>...überhaupt ankommen</li>
+          </ul>
+          <p>
+            Überall wo es sich um Streaming handelt (YouTube, Twitch,
+            Online-Radio, etc…) werden Daten in der Regel mit UDP transferiert.
+            Angenommen man möchte ein 1280x720 Pixel großes Bild per TCP laden.
+            Das hieße für jeden der 921.600 Pixel gäbe es drei Abfragen zwischen
+            dem Client und Server. Drei Abfragen um sicherzustellen, dass alle
+            Pixel richtig und in der richtigen Reihenfolge geladen werden.
+            Spielten jedoch bei fast einer Million Pixel ein, zwei, oder gar 40
+            Pixel, die verloren gingen eine Rolle? Würde man dies überhaupt
+            bemerken? Nein. Deshalb eigent sich UDP hervorragend für den
+            Austausch großer, hochfrequenter Dateiströme.
+          </p>
+          <h2>TCP vs. UDP</h2>
+          <table>
+            <tr>
+              <th>TCP</th>
+              <th>UDP</th>
+            </tr>
+            <tr>
+              <td>Verbindungsorientiert</td>
+              <td>Nicht verbindungsorientiert</td>
+            </tr>
+            <tr>
+              <td>Langsam</td>
+              <td>Schnell</td>
+            </tr>
+            <tr>
+              <td>Zuverlässig</td>
+              <td>Unzuverlässig</td>
+            </tr>
+            <tr>
+              <td>Erfordert beidseitige Zulassung</td>
+              <td>Erfordert keine Zulassung</td>
+            </tr>
+          </table>
+        </div>
+        <div class="row">
+          <img src="./img/tcp_udp.png" />
         </div>
       </div>
     </div>
