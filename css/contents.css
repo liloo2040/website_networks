@@ -82,11 +82,13 @@ body {
   transform: scale(1.1);
 }
 
-code {
-  color: #212220;
+.content-link {
+  color: lime;
+}
+.content-link:hover {
+  color: purple;
 }
 
-img {
-  width: 100%;
-  height: auto;
+code {
+  color: #212220;
 }

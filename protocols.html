@@ -230,7 +230,61 @@
           </table>
         </div>
         <div class="row">
-          <img src="./img/tcp_udp.png" />
+          <img class="content-img" src="./img/tcp_udp.png" />
+        </div>
+      </div>
+    </div>
+
+    <!-- HTTP -->
+
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <h1 class="content-title">HTTP</h1>
+          <p>
+            <strong>HTTP</strong> (<em>HyperText Transfer Protocol</em>) ist ein
+            <em>Client-Server-Protokoll</em>, dass dem Austausch von Daten im
+            Internet dient. Es bildet die Grundlage des modernen Internets und
+            dessen Datenverkehrs in dem es zum Beispiel dafür sorgt, dass der
+            Browser clientseitig ein HTML-Dokument sowie die zugehörigen Assets
+            in Form von Bildern oder CSS-Files vom Server anfordern kann. In der
+            Regel handelt es sich beim Client um einen Webbrowser, der seine
+            Anfrage (<em>Request</em>) an den Port 80 des Servers schickt, der
+            daraufhin entsprechend antwortet (<em>Response</em>). HTTP wird auch
+            als
+            <em>Application Layer Module</em>
+            bezeichnet, da es auf ein bestehenden Transportprotokoll (z.B. TCP)
+            aufgesetzt werden muss um zu funktionieren.
+          </p>
+          <p>
+            Requests und Responses bestehen aus einem Header, der die jeweiligen
+            Steuernachrichten enthält, sowie den eigentlichen Daten. Durch das
+            Senden einer Response beendet der Server die vom Client initiierte
+            Verbindung. Zur korrektieren Adressierung der angeforderten
+            Datensätze wird in der Request der sogenannte <em>URL</em> (Uniform
+            Resource Locator) genutzt. Dieser besteht aus:
+          </p>
+          <ul>
+            <li>der Protokollangabe <code>http://</code></li>
+            <li>dem vollständigen Domainnamen des Servers</li>
+            <li>dem Dateinamen & des Dateipfads der gewünschten Datei</li>
+          </ul>
+          <p>
+            Der Server antwortet daraufhin mit einer Response die im Idealfall
+            die angefragte Datei enthält. Auskunft über den Ausführungsstatus
+            gibt dabei der Statuscode der Response. Besonder bekannt ist z.B.
+            der Statuscode
+            <code>404: ERROR</code> für nichtgefundene Datensätze.
+          </p>
+          <p>
+            Aus Sicherheitsgründen wird heutzutage jedoch immer mehr Abstand vom
+            klassichen HTTP genommen, da es Daten in unverschlüsseltem Klartext
+            überträgt. Die SSL-verschlüsselte Variante
+            <a class="content-link">HTTPS</a> löst dieses Problem jedoch.
+          </p>
+        </div>
+        <div class="row">
+          <img class="content-img" src="./img/http_server_client.png" />
         </div>
       </div>
     </div>
