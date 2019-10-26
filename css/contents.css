@@ -1,6 +1,6 @@
 /* FONT IMPORTS AND INTEGRATION */
 
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:500,700|IBM+Plex+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:500,700|IBM+Plex+Sans:400,600&display=swap");
 
 body {
   font-family: "IBM Plex Sans", sans-serif;
@@ -80,4 +80,8 @@ body {
 }
 .content-img:hover {
   transform: scale(1.1);
+}
+
+code {
+  color: #000;
 }

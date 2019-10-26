@@ -29,62 +29,156 @@
       </div>
     </header>
 
+    <!-- ETHERNET -->
+
     <div class="content">
       <div class="container">
         <div class="row">
-          <div class="seven columns">
-            <h1 class="content-title">Protokolle blubb</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
-              commodi adipisci minus quas. Repudiandae odit aperiam iste. Labore
-              debitis qui magni, molestiae provident sequi nobis officiis
-              recusandae impedit ipsam doloribus! Lorem, ipsum dolor sit amet
-              consectetur adipisicing elit. Sunt velit suscipit quasi iure
-              explicabo quas, numquam magni, optio reprehenderit molestias
-              perspiciatis autem et mollitia inventore neque alias repellendus
-              ex eos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Sunt cumque recusandae nemo, sequi autem debitis incidunt quae
-              consequuntur quidem laboriosam reprehenderit corporis quaerat
-              doloribus suscipit magni placeat cupiditate optio aut.
-            </p>
-          </div>
-          <div class="five columns">
-            <img
-              class="content-img"
-              src="./img/colors/psychology.png"
-              alt="Farben und damit verbundene Emotionen"
-            />
-          </div>
+          <h1 class="content-title">Ethernet</h1>
+          <h2>Was ist eigentlich Ethernet?</h2>
+          <p>
+            Unter <strong>Ethernet </strong>versteht man eine Technologie, die
+            folgende 3 Dinge vereint:
+          </p>
+          <h3>Hardware:</h3>
+          <ul>
+            <li>Verteiler</li>
+            <li>Netzwerkkarten</li>
+            <li>Kommunikationsmedium, z.B. Nezwerkkabel</li>
+          </ul>
+          <h3>Software:</h3>
+          <ul>
+            <li>
+              Protokolle, die beim Austausch der Daten die Vorgehensweise
+              festlegen, wie vom Rechner empfangene Daten interpretiert werden
+              sollen
+            </li>
+            <li>
+              Zugriffsverfahren, das bestimmt, wie auf den gemeinsamen
+              Übertragungskanal zugegriffen werden darf
+            </li>
+          </ul>
+          <h3>Formate:</h3>
+          <ul>
+            <li>Ethernetframe (Teil des Protokolls)</li>
+          </ul>
+          <p>
+            Es erfolgt somit ein Zusammenspiel aus Hardware, Software und
+            bestimmten Formaten, wenn ich Daten von einem Rechner auf den
+            anderen übertragen möchte.
+          </p>
         </div>
       </div>
     </div>
 
+    <!-- IP -->
+
     <div class="content-bright">
       <div class="container">
         <div class="row">
-          <div class="five columns">
-            <img
-              class="content-img"
-              src="./img/colors/contrast.jpg"
-              alt="Kontrastverhältnisse im Überblick"
-            />
-          </div>
-          <div class="seven columns">
-            <h1 class="content-title">blabla</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
-              commodi adipisci minus quas. Repudiandae odit aperiam iste. Labore
-              debitis qui magni, molestiae provident sequi nobis officiis
-              recusandae impedit ipsam doloribus! Lorem, ipsum dolor sit amet
-              consectetur adipisicing elit. Sunt velit suscipit quasi iure
-              explicabo quas, numquam magni, optio reprehenderit molestias
-              perspiciatis autem et mollitia inventore neque alias repellendus
-              ex eos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Sunt cumque recusandae nemo, sequi autem debitis incidunt quae
-              consequuntur quidem laboriosam reprehenderit corporis quaerat
-              doloribus suscipit magni placeat cupiditate optio aut.
-            </p>
-          </div>
+          <h1 class="content-title">Das IP-Protokoll</h1>
+          <p>
+            Jedes Gerät im Internet benötigt eine eindeutige Internetadresse,
+            die sogenannte <strong>IP-Adresse</strong>. Neben Computern und
+            Smartphones brauchen auch <em>smarte</em> Alltagsgegenstände wie der
+            internetfähige Fernseher eine IP-Adresse. Diese Adresse setzt sich
+            aus der Netzadresse und der Hostadresse zusammen. Diese wird als
+            32-Bit-Zahl codiert und in der Form
+            <code>d1*d2*d3*d4</code> notiert. Dabei stehen
+            <code>d1*d2*d3*d4</code> jeweils für die dezimalen Äquivalente der
+            vier Bytes, aus denen die Adresse besteht. Um dem Problem zu
+            entgehen, dass es nicht genügend IP-Adressen geben wird, wurden
+            private IP Adressen definiert. Diese beginnen mit den Nummern
+            „192.68…“. Da aber viele Menschen zu Hause diese Adresse verwenden,
+            muss der Router, der das lokale Netzwerk mit dem Internet verbindet,
+            die private IP-Adresse durch eine gültige Adresse ersetzen. Dies
+            wird als Network Address Translation (<em>NAT</em>) bezeichnet.
+            Zudem wurden die IP-Adressen vergrößert indem das IP Protokoll, das
+            in der Version 4 (<em>IPv4</em>) daherkam, durch eine neue Version 6
+            (<em>IPv6</em>) ersetzt wurde. In der Version 4 gab es nur
+            <span>2<sup>32</sup> </span>mögliche Adressen und diese arbeitet mit
+            32-Bit Adressen während das neue Internetprotokoll 2<sup>128</sup>
+            Adressen hat und mit 64-Bit Adressen arbeitet. Das IP Protokoll
+            bringt Daten von einem Endgerät (PC, Smartphone) zu einem anderen
+            Endgerät. Es verpackt alle Daten und unterteilt sie in transportable
+            Pakete (Datagramme). Inhalt dieser Pakete ist:
+          </p>
+          <ul>
+            <li>
+              Die Adresse des Absenders (Quelladresse)
+            </li>
+            <li>
+              Die Adresse des Empfängers (Zieladresse)
+            </li>
+            <li>
+              Das Feld <code>Time_to_Live</code> (Gültigkeitsdauer, die Daten in
+              Rechnernetzen haben)
+            </li>
+            <li>
+              Das Feld <code>Protocol</code>, das besagt wer beim Empfänger die
+              Daten erhalten soll (z. B Browser oder Email-Programm)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- TCP & UDP -->
+
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <h1 class="content-title">TCP & UPD</h1>
+          <h2>TCP</h2>
+          <p>
+            Das <strong>TCP</strong> (<em>Transmission Control Protocol</em>)
+            ist ein Protokoll, das dazu dient Daten(-pakete) zwischen Entitäten
+            im Netzwerk zu transferieren bzw. zu senden. Es ist die üblichste
+            Form der Kommunikation im World Wide Web, denn überall wo es sich
+            nicht um Data-Streaming handelt, werden in der Regel Daten mit TCP
+            übertragen. Die Besonderheit dieses Protokolls ist das sogenannte
+            <em>Handshake</em>-Prinzip: bei jedem Austausch von Daten(-paketen)
+            wird, findet ein technologische Händeschütteln zwischen Server und
+            Client statt. Dies verläuft ungefähr so:
+          </p>
+          <ol>
+            <li>
+              Client sendet eine Anfrage für die Daten an den Server
+            </li>
+            <li>
+              Server antwortet mit einer Bestätigung, dass der Transfer
+              stattfinden kann (falls Ports verfügbar)
+            </li>
+            <li>
+              Client sendet eine Bestätigung, dass der die Antwort vom Server
+              erhalten hat
+            </li>
+            <li>
+              Verbindungsherstellung und Datentransfer von Server an Client
+            </li>
+          </ol>
+          <p>
+            <strong>Ist der ganze Aufwand überhaupt nötig?</strong>
+            <strong>Klar, das ist das Prinzip von TCP</strong>! Wenn es nicht so
+            wäre, könnte es dazu kommen, dass die Datenpakete die der Server
+            sendet gar nicht beim Client ankommen. Somit würden in der Praxis
+            z.B. ein Paar Buchstaben einer WhatsApp Nachricht fehlen oder Teile
+            der CSS-Datei einer Website nicht geladen. Damit es nicht zu solchen
+            Missverständnissen kommt, prüft man sehr genau ob die Verbindung
+            zwischen dem Client und dem Server ausreichend gut ist um einen
+            Datentransfer zu durchführen. <br />
+            TCP hat jedoch auch ein paar Nachteile, nämlich:
+          </p>
+          <ul>
+            <li>
+              Nicht sehr effizient, da bei jedem Datenaustausch 3
+              Server-Client-Abfragen erfolgen.
+            </li>
+            <li>
+              Einige Webserver-Architekturen (Apache) werden durch TCP
+              angreifbar (Slow Loris Attack)
+            </li>
+          </ul>
         </div>
       </div>
     </div>
