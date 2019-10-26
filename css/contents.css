@@ -10,7 +10,7 @@ body {
 
 .header {
   height: 120px;
-  background-color: limegreen;
+  background-color: lime;
   font-family: "IBM Plex Mono", sans-serif;
   font-weight: 700;
 }
@@ -33,6 +33,7 @@ body {
 .navbar-link-selected {
   color: purple;
   font-weight: 700;
+  border-bottom: 1px purple;
 }
 .navbar-link-selected:hover {
   color: rgb(0, 0, 0);

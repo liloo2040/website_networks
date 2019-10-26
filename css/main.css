@@ -10,8 +10,8 @@ body {
 /* HEADER SECTION */
 
 .header {
-  height: 620px;
-  background-image: url("../img/taylor-vick-M5tzZtFCOfs-unsplash.jpg");
+  height: 100vh;
+  background-image: url("../img/header.jpg");
   background-size: cover;
   background-position: 50% 62%;
   font-family: "IBM Plex Mono", monospace;
@@ -32,7 +32,7 @@ body {
   text-decoration: none;
 }
 .navbar-link:hover {
-  color: limegreen;
+  color: lime;
   font-weight: 700;
 }
 .header-brand-wrapper {
@@ -48,7 +48,7 @@ body {
   color: #fff;
 }
 .header-brand:hover {
-  color: limegreen;
+  color: lime;
 }
 .slogan {
   padding-top: 120px;
@@ -63,8 +63,8 @@ body {
 .slogan-button {
   margin-top: 50px;
   font-size: 100%;
-  background-color: limegreen;
-  color: #fff;
+  background-color: lime;
+  color: #000;
 }
 
 .slogan-button:hover {
@@ -80,11 +80,13 @@ body {
   padding-top: 100px;
   padding-bottom: 85px;
   background-color: rgb(0, 0, 0);
+  height: 50vh;
 }
 .content-bright {
   color: rgb(255, 255, 255);
   padding-top: 100px;
   padding-bottom: 85px;
+  height: 50vh;
   background-color: rgb(20, 20, 20);
 }
 .content-title {
@@ -93,21 +95,25 @@ body {
   font-family: "IBM Plex Mono", monospace;
 }
 .content-img {
-  width: 70%;
+  width: 40vh;
+  height: 40vh;
+  object-fit: cover;
   border-radius: 01061997px;
   border: 5px solid purple;
   display: block;
   float: right;
 }
 .content-bright-img {
-  width: 70%;
+  width: 40vh;
+  height: 40vh;
+  object-fit: cover;
   border-radius: 01061997px;
   border: 5px solid purple;
   display: block;
   float: left;
 }
 .content-link {
-  color: limegreen;
+  color: lime;
 }
 .content-link:hover {
   color: purple;
@@ -127,10 +133,10 @@ body {
   font-family: "IBM Plex Mono", monospace;
 }
 .credit-link {
-  color: rgb(0, 0, 0);
-  text-decoration: underline;
+  color: lime;
+  text-decoration: none;
   font-weight: bold;
 }
 .credit-link:hover {
-  color: limegreen;
+  color: black;
 }
