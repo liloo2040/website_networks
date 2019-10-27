@@ -322,6 +322,24 @@
             Austausch von Dateien zwischen mehreren Computern innerhalb eines
             Netzwerkes regelt.
           </p>
+          <p>
+            Um eine Datenübertragung zu Ermöglichen, nutzt FTP zwei
+            Verbindungskanäle: dan Steuerungskanal und den Datenkanal. Dabei
+            werden die Kommandos des Clients über den Steuerungskanal gesendet,
+            während der eigentliche Datenfluss über den Datenkanal läuft. Dieser
+            Datenverkehr besteht entweder aus ASCII- oder binären Datensätzen
+            und wird vom unterliegenden TCP-Protokoll auf Fehlerfreiheit
+            kontrolliert.
+          </p>
+          <p>
+            Sehr häufig wird FTP an Universitäten oder Schule verwendet um den
+            Schülern oder Studierenden Daten zur Verfügung zu stellen. So lässt
+            sich zum Beispiel auch theoretisch per FTP auf das moodle-System der
+            BBS Westerburg zugreifen. Außerdem wird es im Web-Bereich genutzt,
+            um Daten auf einen Server auszuspielen. Möchte man seine Website
+            also z.B. auf den Server eines Hostingsdienstleisters (z.B. Netlify
+            oder 1&1 IONOS) aufspielen, so klappt das über FTP.
+          </p>
         </div>
         <div class="row">
           <img class="content-img" src="./img/ftp_scheme.webp" />
@@ -336,9 +354,31 @@
         <div class="row">
           <h1 class="content-title">POP3</h1>
           <p>
-            POP3 ist die Abkürzung für Post Office Protocol 3 und die aktuellste
-            eines standardisierten Protokolls für den Email-Verkehr.
+            POP3 ist die Abkürzung für <em>Post Office Protocol 3</em> und ist
+            die aktuellste eines standardisierten Protokolls für den
+            Email-Verkehr. Auch hierbei handelt es sich um ein
+            Client-Server-Protokoll, bei dem der Postfachserver als POP-Server,
+            die installierte Email-App hingegen als POP-Client fungiert.
           </p>
+          <p>
+            POP dient dabei bloß als Möglichkeit zum Abrufen, Listen und Löschen
+            von Emails, also nicht zum Versenden selbiger. Dafür muss es durch
+            das Protokoll <strong>SMTP</strong> ergänzt werden.
+          </p>
+          <p>
+            Der Abruf der Mails vom POP-Client passiert hierbei über eine
+            Online-Verbindung über das TCP-Protokoll. Nach erfolgreichem
+            Herunterladen der Inhalte und der Ausführung eventuell noch
+            bestehender Löschbefehle des Users wird die Verbindung geschlossen
+            und der User kann die Mails offline lesen.
+          </p>
+          <p>
+            Durch die fehlende Möglichkeit Mails abzuschicken hat POP3 in den
+            letzten Jahren an Bedeutung verloren und wird immer mehr durch das
+            Protokolle ersetzt, welche Emails empfangen <em>und</em> senden
+            können.
+          </p>
+          <img class="content-img" src="./img/POP_3.png" />
         </div>
       </div>
     </div>
