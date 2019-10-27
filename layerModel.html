@@ -27,62 +27,144 @@
       </div>
     </header>
 
+    <!-- LAYERMODEL -->
+
     <div class="content">
       <div class="container">
         <div class="row">
-          <div class="seven columns">
-            <h1 class="content-title">Schichtenmodell</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
-              commodi adipisci minus quas. Repudiandae odit aperiam iste. Labore
-              debitis qui magni, molestiae provident sequi nobis officiis
-              recusandae impedit ipsam doloribus! Lorem, ipsum dolor sit amet
-              consectetur adipisicing elit. Sunt velit suscipit quasi iure
-              explicabo quas, numquam magni, optio reprehenderit molestias
-              perspiciatis autem et mollitia inventore neque alias repellendus
-              ex eos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Sunt cumque recusandae nemo, sequi autem debitis incidunt quae
-              consequuntur quidem laboriosam reprehenderit corporis quaerat
-              doloribus suscipit magni placeat cupiditate optio aut.
-            </p>
-          </div>
-          <div class="five columns">
-            <img
-              class="content-img"
-              src="./img/colors/psychology.png"
-              alt="Farben und damit verbundene Emotionen"
-            />
-          </div>
+          <h1 class="content-title">Das Schichtenmodell (Layermodel)</h1>
+          <h3>ISO/OSI-Referenzmodell</h3>
+          <p>
+            Damit reibungslose Ablauf einer geräte- oder netzwerkübergreifenden
+            Kommunikation gewährleistet ist, müssen nebst Festlegung der
+            genutzten Schnittstellen und Übertragungsverfahren auch
+            Vereinbarungen über den Ablauf der Kommunikation getroffen werden.
+            Diese Ablaufvereinbarungen nennt man <strong>Protokolle</strong>.
+          </p>
+          <p>
+            Ziel dieser Vereinbarungen ist die Einrichtung offener,
+            standardisierter Kommunikationssysteme, auch
+            <strong>OSI</strong> (Open System Interconnection) genannnt, die die
+            Möglichkeiten zur Kommunikation zwischen verschiedenen
+            Netzwerkgeräten festlegen. Die internationale Normungsorganisation
+            <strong>ISO</strong> hat zu diesem Zwecke 1983 das genormte,
+            allgemeingültige <strong>ISO-Referenzmodell</strong> aufgestellt.
+          </p>
+          <p>
+            Das IS0-Referenzmodell teilt dabei die für die Kommunikation
+            genutzten Dienste bzw. deren Protokolle in eine Hierarchie von
+            insgesamt <strong>sieben</strong> aufeinander aufbauenden Schichten
+            ein. Dabei formuliert eine Schicht an die darunter liegende einen
+            Auftrag, während diese eine Dienstlesitung an die darüber liegender
+            Schicht erbringt.
+          </p>
+          <h3>Aufgaben der einzelnen Schichten</h3>
+          <h5>1. Phsysische Schicht (Physical Layer)</h5>
+          <p>
+            Hier findet die (ungesicherte)
+            <strong>Übertragung der Bitfolgen</strong> über die
+            Bitübertragungsschicht statt. Außerdem werden hier die
+            Zeichenübertragungverfahren, die Übertragungsrate und die
+            Schnittstellen festgelegt.
+          </p>
+          <h5>2. Sicherungsschicht (Link Layer)</h5>
+          <p>
+            Sicherung der darunterliegenden physischen Schicht durch die
+            Übertragung in Form von Blöcken aus Bitfolgen.
+          </p>
+          <h5>3. Vermittlungsschicht (Network Layer)</h5>
+          <p>
+            Herstellung des physischen Datenverkehrs zwischen Sender und
+            Empfänger inklusive Ermittlung des Übertragungswegs, Besstätigung
+            der Empfangsbereitschaft und Datenflusskontrolle.
+          </p>
+          <h5>4. Transportschicht (Transport Layer)</h5>
+          <p>
+            Diese Schicht sorgt für die Steuerung und Überwachung der
+            End-to-End-Verbindung, die durch den Network Layer errichtet wurde.
+            Dabei findet zusätzlich eine Vollständigkeitskontrolle statt.
+          </p>
+          <h5>5. Kommunikationssteuerungsschicht (Session Layer)</h5>
+          <p>
+            Hier wird nun die Kommunikation zwischen Sender und Empfänger in
+            Form von Sitzungen (Sessions) festgelegt, was bereits auf
+            Betriebssystemebene geschieht und im Fachjargon auch als
+            <em>Dialogsteuerung</em> bezeichnet wird.
+          </p>
+          <h5>6. Darstellungsschicht (Presentation Layer)</h5>
+          <p>
+            Der Presentation Layer legt nun fest, was die ausgetauschten Daten
+            (Bilder, Code, etc.) bedeuten, also wie diese vom Empfänger zu
+            interpretieren sind. Gegebenfalls wird hier auch die
+            Darstellungsform angepasst.
+          </p>
+          <h5>7. Anwendungsschicht (Application Layer)</h5>
+          <p>
+            Hier werden nun endlich die Anwenungsklassen (Applications)
+            angegeben, die für den Kommunikationsvorgang genutzt werden (z.B.
+            E-Mail Programm, File Transfer, Intern-Browser etc.).
+          </p>
+          <h5>Schichten 0 und 8</h5>
+          <p>
+            Inoffiziell wird häufig noch von den Layern 0 und 8 gesprochen.
+            Damit ist zum einen die phsysische Bindung (zum Beispiel das
+            LAN-Kabel) und der Nutzer (z.B. derjenige, der gerade seine Mails
+            abruft) gemeint. Wenn ihr also mal einen Netzwerktechniker über
+            einen "Fehler im Layer 8" hören sprecht, meint er damit in der Regel
+            eine Fehlnutzung durch den User.
+          </p>
+          <h3>Die TCP/IP-Protokollfamilie</h3>
+          <p>
+            Das amrikanische Verteidigungsminsiterum hat 1978 das
+            <strong>TCP/IP-Modell</strong> als Netwerkstandard eingeführt. Im
+            Gegensatz zum ISO/OSI-Modell werden die Funktionen des Netzwerkes
+            hier vereinfacht in <strong>4 Schichten</strong> dargestellt.
+          </p>
+          <p>
+            Mehr über die einzelnen Protokolle der TCP/IP-Protokollfamilie
+            erhältst du auf unserer Seite zu
+            <a href="./protocols.html">Protokollen</a>!
+          </p>
+          <p>
+            Durch die Nutzung in Internet und Intranet hat die
+            TCP/IP-Protokollfamilie in den letzten Jahren eine sehr große
+            Verbreitung erfahren und gilt heutzutage gewissermaßen als Standard.
+            Es lässt sich jedoch sehr leicht dem OSI/ISO-Referenzmodell
+            gegenüberstellen:
+          </p>
+        </div>
+        <div class="row">
+          <img class="content-img" src="./img/iso_osi_tcp_ip.png" />
         </div>
       </div>
     </div>
 
+    <!-- NETWORK COMMUNICATION -->
+
     <div class="content-bright">
       <div class="container">
         <div class="row">
-          <div class="five columns">
-            <img
-              class="content-img"
-              src="./img/colors/contrast.jpg"
-              alt="Kontrastverhältnisse im Überblick"
-            />
-          </div>
-          <div class="seven columns">
-            <h1 class="content-title">Adressierung</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
-              commodi adipisci minus quas. Repudiandae odit aperiam iste. Labore
-              debitis qui magni, molestiae provident sequi nobis officiis
-              recusandae impedit ipsam doloribus! Lorem, ipsum dolor sit amet
-              consectetur adipisicing elit. Sunt velit suscipit quasi iure
-              explicabo quas, numquam magni, optio reprehenderit molestias
-              perspiciatis autem et mollitia inventore neque alias repellendus
-              ex eos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Sunt cumque recusandae nemo, sequi autem debitis incidunt quae
-              consequuntur quidem laboriosam reprehenderit corporis quaerat
-              doloribus suscipit magni placeat cupiditate optio aut.
-            </p>
-          </div>
+          <h1 class="content-title">Adressierung in Netzwerken</h1>
+          <h3>IP-Klassen</h3>
+          <p>
+            Die IP-Adressen des Schemas IPv4 lassen sich in fünf Klassen
+            unterteilen. Die häufigsten Klassen sind die A, B und C - Klasse -
+            die Klassen D und E finden sehr selten Anwendung. Anhand des ersten
+            binären Oktetts der IP-Adresse lässt sich bestimmen, zu welcher
+            Klasse die Adresse gehört.
+          </p>
+          <h3>A Klasse</h3>
+          <p>
+            Das erste Bit des ersten binären Oktetts ist immer eine Null, das
+            erste Oktett ist immer eine Zahl zwischen 1 und 127. Deshalb
+            variiert die Adresse zwischen <code>1.x.x.x</code> und
+            <code>126.x.x.x</code>.<br />
+            Daraus folgt, dass die IP Adresse der A-Klasse maximal 126
+            <span>(2<sup>7</sup> -2)</span> Netzwerke und 16777214
+            <span>(2<sup>24</sup> -2)</span>
+            Geräte beinhalten kann, da nur das erste Oktett die Netzwerke und
+            die restlichen drei die Hosts beschreiben.
+          </p>
         </div>
       </div>
     </div>
