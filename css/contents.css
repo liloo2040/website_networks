@@ -79,7 +79,7 @@ body {
   transition: all 0.75s;
 }
 .content-img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .content-link {
