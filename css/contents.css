@@ -10,7 +10,7 @@ body {
 
 .header {
   height: 100px;
-  background-color: lime;
+  background-color: #00ff00;
   font-family: "IBM Plex Mono", sans-serif;
   font-weight: 700;
 }
@@ -28,12 +28,12 @@ body {
   text-decoration: none;
 }
 .navbar-link:hover {
-  color: purple;
+  color: #800080;
 }
 .navbar-link-selected {
-  color: purple;
+  color: #800080;
   font-weight: 700;
-  border-bottom: 1px purple;
+  border-bottom: 1px #800080;
 }
 .navbar-link-selected:hover {
   color: #212220;
@@ -51,7 +51,7 @@ body {
   color: #212220;
 }
 .header-brand:hover {
-  color: purple;
+  color: #800080;
 }
 
 /* CONTENT SECTION */
@@ -83,10 +83,10 @@ body {
 }
 
 .content-link {
-  color: lime;
+  color: #00ff00;
 }
 .content-link:hover {
-  color: purple;
+  color: #800080;
 }
 
 code {
@@ -96,7 +96,7 @@ code {
 /* FOOTER SECTION */
 
 .footer-nav {
-  background-color: purple;
+  background-color: #800080;
   padding-top: 20px;
   padding-bottom: 10px;
   text-align: center;
@@ -115,5 +115,5 @@ code {
   font-weight: bold;
 }
 .footer-link:hover {
-  color: lime;
+  color: #00ff00;
 }
