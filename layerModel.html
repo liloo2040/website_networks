@@ -153,7 +153,7 @@
             binären Oktetts der IP-Adresse lässt sich bestimmen, zu welcher
             Klasse die Adresse gehört.
           </p>
-          <h3>A Klasse</h3>
+          <h3>A-Klasse</h3>
           <p>
             Das erste Bit des ersten binären Oktetts ist immer eine Null, das
             erste Oktett ist immer eine Zahl zwischen 1 und 127. Deshalb
@@ -164,6 +164,30 @@
             <span>(2<sup>24</sup> -2)</span>
             Geräte beinhalten kann, da nur das erste Oktett die Netzwerke und
             die restlichen drei die Hosts beschreiben.
+          </p>
+          <h3>B-Klasse</h3>
+          <p>
+            Bei der B-Klasse sind die ersten zwei Bits des ersten Oktetts sind
+            immer 1 und 0. Das erste Oktett ist hier immer eine Zahl zwischen
+            128 und 191. Deshalb variiert die Adresse zwischen
+            <code>128.0.x.x</code> und <code>191.255.x.x</code>.<br />
+            Daraus folgt, dass die IP Adresse der B-Klasse maximal 16384
+            <span>(2<sup>14</sup>)</span>
+            Netzwerke und 65524 <span>(2<sup>16</sup> -2)</span> Geräte haben
+            kann, da die ersten zwei Oktette für das Netzwerk und die letzten
+            zwei Oktetts für die Hosts reserviert sind.
+          </p>
+          <h5>C-Klasse</h5>
+          <p>
+            Die ersten drei Bits des ersten Oktetts lauten immer 1, 1, 0 und das
+            erste Oktett ist immer eine Zahl zwischen 192 und 223, also variiert
+            die Adresse zwischen <code>192.0.0.x</code> und
+            <code>223.255.255.x</code>.<br />
+            Daraus folgt, dass die IP Adresse der C-Klasse maximal 2097152
+            <span>(2<sup>21</sup>)</span>
+            Netzwerke und 254 <span>(2<sup>8</sup> -2)</span> Geräte haben kann,
+            da die ersten drei Oktette für das Netzwerk und das letzte Oktett
+            für die Hosts reserviert ist.
           </p>
         </div>
       </div>
