@@ -1,153 +1,144 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <title>Networks4Noobs</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="./css/skeleton.css" />
-    <link rel="stylesheet" type="text/css" href="./css/main.css" />
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="header-brand-wrapper">
-          <a class="header-brand" href="index.html">Networks4Noobs</a>
-        </div>
-        <nav class="header-navbar">
-          <ul class="header-navbar-links">
-            <li>
-              <a class="navbar-link" href="./layerModel.html">Allgemein</a>
-            </li>
-            <li>
-              <a class="navbar-link" href="./protocols.html">Protokolle</a>
-            </li>
-            <li><a class="navbar-link" href="./current.html">Aktuelles</a></li>
-          </ul>
-        </nav>
+<head>
+  <title>Networks4Noobs</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="./css/skeleton.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/main.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-brand-wrapper">
+        <a class="header-brand" href="index.html">Networks4Noobs</a>
       </div>
+      <nav class="header-navbar" aria-label="menu">
+        <label for="toggle-menu" aria-label="menu">&#9776;</label>
+        <input type="checkbox" id="toggle-menu" />
+        <ul class="header-navbar-links">
+          <li>
+            <a class="navbar-link" href="./layerModel.html">Allgemein</a>
+          </li>
+          <li>
+            <a class="navbar-link" href="./protocols.html">Protokolle</a>
+          </li>
+          <li><a class="navbar-link" href="./current.html">Aktuelles</a></li>
+        </ul>
+      </nav>
+    </div>
 
-      <div class="container">
-        <div class="slogan">
-          <div class="slogan-text">
-            Netzwerktechnik für Anfänger
-          </div>
-          <a class="button-link" href="#protocols">
-            <button class="slogan-button">
-              Los geht's!
-            </button>
-          </a>
+    <div class="container">
+      <div class="slogan">
+        <div class="slogan-text">
+          Netzwerktechnik für Anfänger
         </div>
+        <a class="button-link" href="#protocols">
+          <button class="slogan-button">
+            Los geht's!
+          </button>
+        </a>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!--  LAYER MODEL  -->
+  <!--  LAYER MODEL  -->
 
-    <div id="protocols" class="content">
-      <div class="container">
-        <div class="row">
-          <div class="seven columns">
-            <h1 class="content-title">Das Layermodell</h1>
-            <p>
-              Du willst wissen wie Geräte in Netzwerken einheitlich miteinander
-              kommunizieren, wie man sie adressiert und was zum Beispiel das
-              US-Verteidigungsministerium damit zu tun hat?
-            </p>
-            <p>
-              <a class="content-link" href="./layerModel.html">Hier entlang!</a>
-            </p>
-          </div>
-          <div class="five columns">
-            <img
-              class="content-img"
-              src="./img/cables.jpg"
-              alt="Netzwerkkabel"
-            />
-          </div>
+  <div id="protocols" class="content">
+    <div class="container">
+      <div class="row">
+        <div class="seven columns">
+          <h1 class="content-title">Das Layermodell</h1>
+          <p>
+            Du willst wissen wie Geräte in Netzwerken einheitlich miteinander
+            kommunizieren, wie man sie adressiert und was zum Beispiel das
+            US-Verteidigungsministerium damit zu tun hat?
+          </p>
+          <p>
+            <a class="content-link" href="./layerModel.html">Hier entlang!</a>
+          </p>
+        </div>
+        <div class="five columns">
+          <img class="content-img" src="./img/cables.jpg" alt="Netzwerkkabel" />
         </div>
       </div>
     </div>
+  </div>
 
-    <!--  PROTOCOLS  -->
+  <!--  PROTOCOLS  -->
 
-    <div id="addressing" class="content-bright">
-      <div class="container">
-        <div class="row">
-          <div class="five columns">
-            <img
-              class="content-bright-img"
-              src="./img/morecables.jpg"
-              alt="Straßennetzwerk"
-            />
-          </div>
-          <div class="seven columns">
-            <h1 class="content-title">Protokolle</h1>
-            <p>
-              Du interessiert dich für die verschiedenen Protokolle, die beim
-              Datenaustausch und der Kommunkation in Netzwerken eine Rolle
-              spielen, wie HTTP, TCP oder IP?
-            </p>
-            <p>
-              <a class="content-link" href="./protocols.html">Hier entlang!</a>
-            </p>
-          </div>
+  <div id="addressing" class="content-bright">
+    <div class="container">
+      <div class="row">
+        <div class="five columns">
+          <img class="content-bright-img" src="./img/morecables.jpg" alt="Straßennetzwerk" />
         </div>
-      </div>
-    </div>
-
-    <!--  CURRENT  -->
-
-    <div id="current" class="content">
-      <div class="container">
-        <div class="row">
-          <div class="seven columns">
-            <h1 class="content-title">Aktuelles</h1>
-            <p>
-              Du willst gerne wissen, was der aktuelle Stand der Dinge in der
-              Netzwerktechnik ist, warum in der Suchleiste deines Browser häufig
-              ein kleines Schloss erscheint oder IP-Adressen auf einmal so
-              komisch aussehen?
-            </p>
-            <p>
-              <a class="content-link" href="./current.html">Hier entlang!</a>
-            </p>
-          </div>
-          <div class="five columns">
-            <img
-              class="content-img"
-              src="./img/ethernet.jpg"
-              alt="Ethernet-Anschlüsse"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CREDITS -->
-
-    <div class="credits">
-      <div class="container">
-        <div class="row">
-          <p class="credits-text">
-            Ein Projekt von
-            <a class="credit-link" href="https://github.com/LBeul">
-              Louis Beul
-            </a>
-            <span>, </span>
-            <a
-              class="credit-link"
-              href="https://www.instagram.com/esther.brauer/"
-            >
-              Esther Brauer
-            </a>
-            <span>und </span>
-            <a class="credit-link" href="https://github.com/BartoszBurgiel">
-              Bartosz Burgiel
-            </a>
+        <div class="seven columns">
+          <h1 class="content-title">Protokolle</h1>
+          <p>
+            Du interessiert dich für die verschiedenen Protokolle, die beim
+            Datenaustausch und der Kommunkation in Netzwerken eine Rolle
+            spielen, wie HTTP, TCP oder IP?
+          </p>
+          <p>
+            <a class="content-link" href="./protocols.html">Hier entlang!</a>
           </p>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+
+  <!--  CURRENT  -->
+
+  <div id="current" class="content">
+    <div class="container">
+      <div class="row">
+        <div class="seven columns">
+          <h1 class="content-title">Aktuelles</h1>
+          <p>
+            Du willst gerne wissen, was der aktuelle Stand der Dinge in der
+            Netzwerktechnik ist, warum in der Suchleiste deines Browser häufig
+            ein kleines Schloss erscheint oder IP-Adressen auf einmal so
+            komisch aussehen?
+          </p>
+          <p>
+            <a class="content-link" href="./current.html">Hier entlang!</a>
+          </p>
+        </div>
+        <div class="five columns">
+          <img class="content-img" src="./img/ethernet.jpg" alt="Ethernet-Anschlüsse" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CREDITS -->
+
+  <div class="credits">
+    <div class="container">
+      <div class="row">
+        <p class="credits-text">
+          Ein Projekt von
+          <a class="credit-link" href="https://github.com/LBeul">
+            Louis Beul
+          </a>
+          <span>, </span>
+          <a class="credit-link" href="https://www.instagram.com/esther.brauer/">
+            Esther Brauer
+          </a>
+          <span>und </span>
+          <a class="credit-link" href="https://github.com/BartoszBurgiel">
+            Bartosz Burgiel
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
